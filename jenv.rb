@@ -1,4 +1,4 @@
-require 'formula'
+require "formula"
 
 class Jenv < Formula
   homepage "http://www.jenv.be"
@@ -7,8 +7,8 @@ class Jenv < Formula
   head "https://github.com/gcuisinier/jenv.git"
 
   def install
-     libexec.install Dir['*']
-     bin.write_exec_script libexec/'bin/jenv'
+     libexec.install Dir["*"]
+     bin.write_exec_script libexec/"bin/jenv"
    end
 
    def caveats; <<-EOS.undent
